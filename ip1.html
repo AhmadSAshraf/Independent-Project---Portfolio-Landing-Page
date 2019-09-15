@@ -1,66 +1,102 @@
 <!DOCTYPE html>
-<html>
-  <head>Portfolio Landing Page - Ahmad Ashraf
-      <link rel="stylesheet" href="css/styles.css">
-  </head>
-  <body>
-      <h1>My name is Ahmad Ashraf. Here's a picture of me.</h1>
-      <img src="images/portfolio-picture.jpg" alt="A picture of me">
+<html lang="en">
+<head>
+<title>Ahmed Ashraf </title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
 
-      <h2>About Me</h2>
-      <p>I am 21 years old, born and raised in Nairobi, Kenya. I see myself as the quiet, confident type.
-          I went attended high school at Aga Khan Academy. I studied until O levels and then decided to move
-         on and expand my skillset.I decided to join Moringa School because after a lot of research, I came to the conclusion that
-         Moringa School is best insituition for learning programming for me based on the fact that I'm a person who likes to learn things in a practical way, without spending time on irrelevant content.
-        </p>
-      <ul>
-          <h2>My Hobbies</h2>
-          <li>Chess</li>
-          <li>Hiking</li>
-          <li>Yoga</li>
-          <li>Meditation</li>
-      </ul>
+<div class="header">
+  <h1>My Portfolio</h1>
+  <p> Ahmad Ashraf</p>
+</div>
 
-        <!-- Contact-->
-        <section id="contact">
-            <h2>Get In Touch</h2>
-            <p>Contact Me</p>
-            <div>
-                <div>
-                    <form method="post" action="#">
-                        <div class="form">
-                            <div ><input type="text" name="name" id="name" placeholder="Name" />
-                            </div>
-                            <div ><input type="email" name="email" id="email" placeholder="Email" />
-                            </div>
-                            <div><textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
-                            </div>
-                        </div>
-                    </form>
-                    <ul class="actions">
-                        <li><input type="submit" value="Send Message" /></li>
-                    </ul>
-                </div>
-                <div class="col-4 col-12-small">
-                    <ul class="labeled-icons">
-                        <li>
-                            <h3><span class="label">Address</span></h3>
-                            Parklands.<br />
-                            Nairobi<br />
-                            Kenya
-                        </li>
-                        <li>
-                            <h3><span class="label">Phone</span></h3>
-                            0738372080
-                        </li>
-                        <li>
-                            <h3><span class="label">Email</span></h3>
-                            <a href="#">ahmadashraf159@gmail.com</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-  </body> 
+<div class="navbar">
+  <a href="#about">About Me</a>
+  <a href="#hobbies">My Hobbies & Project</a>
+  <a href="#contact">Contact Me</a>
+</div>
 
+<div class="row">
+  <div class="about" id="about">
+    <h2>About Me</h2>
+    <h5>Photo of me:</h5>
+    <div>
+        <img class="myimg" style="height:200px;" src="images/portfolio-picture.jpg" alt="A picture of me">
+    </div>
+    <p>I am 21 years old, born and raised in Nairobi, Kenya. I see myself as the quiet, confident type.
+    I went attended high school at Aga Khan Academy. I studied until O levels and then decided to move
+    on and expand my skillset.
+    </p>
+    <p>
+    I decided to join Moringa School because after a lot of research, I came to the conclusion
+    that Moringa School is best insituition for learning programming for me based on the fact that I'm a person who likes to
+    learn things in a practical way, without spending time on irrelevant content.</p>
+    </p>
+    <h3>More Online images</h3>
+    <p>Here are ome of the online images of from my Social Media account</p>
+    <div> 
+        <img class="myimg" style="height:200px;" src="images/portfolio-picture.jpg" alt="A picture of me">
+    </div>
+    <br>
+    <div>
+        <img class="myimg" style="height:200px;" src="images/portfolio-picture.jpg" alt="A picture of me">
+    </div>
+    <br>
+    <div>
+        <img class="myimg" style="height:200px;" src="images/portfolio-picture.jpg" alt="A picture of me">
+    </div>
+  </div>
+  <div class="hobbies" id="hobbies">
+    <h2>My Hobbies</h2>
+    <h5>Below are some of the things I like doing</h5>
+    <p>
+        <ul>
+            <li>Chess</li>
+            <li>Hiking</li>
+            <li>Yoga</li>
+            <li>Meditation</li>
+        </ul>
+    </p>
+    <br>
+    <h2>My Projects</h2>
+    <h5>Here are Some of the projects I have engaded myself with</h5>
+    <div>
+        <img class="myimg" style="height:200px;" src="images/portfolio-picture.jpg" alt="A picture of me">
+    </div>
+        <p> My projects description</p>
+  </div>
+</div>
+<div class="contact" id="contact">
+    <div style="text-align:center">
+        <h2>Contact Us</h2>
+        <p>Kindly leave me a message:</p>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="images/portfolio-picture.jpg" style="width:100%">
+        </div>
+        <div class="column">
+            <form action="/action_page.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name">
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something" style="height:170px"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+<footer>
+    <p>
+        Developed by <a href="" target="_blank"> Ahmad Ashraf</a>
+    </p>
+</footer>
+</div>
+
+</body>
 </html>
